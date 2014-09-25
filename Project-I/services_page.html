@@ -1,9 +1,80 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation 5</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/foundation.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/modernizr.js"></script>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+         hr {
+            border: 5px;
+            width: 80%;
+            color: black;
+            background-color: black;
+            height: 5px;
+        }
+    </style>
 </head>
 <body>
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="index.html">Main page</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
 
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="active"><a href="#">Right Button Active</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Right Button Dropdown</a>
+                    <ul class="dropdown">
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                        <li><a href="index.html">Main Page</a></li>
+                        <li><a href="about_me.html">About Me</a></li>
+                        <li><a href="projects_page.html">Projects Page</a></li>
+                        <li><a href="services_page.html">Services</a></li>
+                        <li><a href="contact_me.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="projects_page.html">Projects Page</a></li>
+                <li><a href="services_page.html">Services</a></li>
+                <li><a href="contact_me.html">Contact</a></li>
+            </ul>
+        </section>
+    </nav>
+    <div id="My services!">
+        <h1>Website development</h1>
+        <p>I have knowledge of HTML,CSS, and PHP coding with a little bit a time I can get a website up and running for you, you just need a server for me to put the content on.</p>
+        <h2>Java scripting</h2>
+        <p>Experienced in c++, c#, and java, can develop complicated scripts with multiple methods.</p>
+        <h3>Database management</h3>
+        <p>Basic understanding of database tables and query searches.</p>
+    </div>
+   
+    <footer>
+        <div id="reach_out">
+            <p style="text-align: center">Connect with me at...</p>
+        </div>
+        <hr>
+        <div id="contact">
+            <a href="https://www.facebook.com/david.harris.12139862" class="button">Facebook</a>
+        </div>
+        <p style="text-align:center"><small>&copy2014 DH</small></p>
+    </footer>
 </body>
 </html>
