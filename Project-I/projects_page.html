@@ -13,16 +13,21 @@
             background-color: lightgrey;
         }
          hr {
+             align-content:center;
             border: 5px;
             width: 80%;
             color: black;
             background-color: black;
             height: 5px;
         }
+         img{
+              max-height: 600px;
+             max-width: 500px;
+         }
     </style>
 </head>
 <body>
-    <nav class="top-bar" data-topbar role="navigation">
+    <nav class="top-bar" data-topbar role="navigation" style="margin: 10px;">
         <ul class="title-area">
             <li class="name">
                 <h1><a href="index.html">Main page</a></h1>
@@ -36,7 +41,7 @@
             <ul class="right">
                 <li class="active"><a href="#">Right Button Active</a></li>
                 <li class="has-dropdown">
-                    <a href="#">Right Button Dropdown</a>
+                    <a href="#">Dropdown Menu</a>
                     <ul class="dropdown">
                         <li class="active"><a href="#">Active link in dropdown</a></li>
                         <li><a href="index.html">Main Page</a></li>
@@ -59,21 +64,26 @@
     </nav>
     <div>
         <h1>Projects</h1>
-        <div class="large-9 columns large-pull-4">
-            <ul class="medium-block-grid-3 small-block-grid-2">
-                <a href="sub_project1.html" target="_blank"><img src="img/bank_project.png" /></a>
+        <div class="small-9 columns large-centered medium-centered">
+            <ul class="large-block-grid-1 medium-block-grid-1 small-block-grid-2">
+                <li style="margin:10px"> <a href=" sub_project1.html" target="_blank"><img src="img/bank_project.png" /></a></li>
+                <li style="margin:10px"><a href="sub_project2.html" target="_blank"><img src="img/database.png" /></a></li>
+                <li style="margin:10px"><a href="sub_project3.html" target="_blank"><img src="img/bank_project.png" /></a></li>
             </ul>
         </div><!-- end large-9 -->
 </div>
-    <footer>
-        <div id="reach_out">
-            <p style="text-align: center">Connect with me at...</p>
-        </div>
-        <hr>
-        <div id="contact">
-            <a href="https://www.facebook.com/david.harris.12139862" class="button">Facebook</a>
-        </div>
-        <p style="text-align:center"><small>&copy2014 DH</small></p>
-    </footer>
+    <div id="footer">
+        <footer>
+            
+            <hr>
+            <div id="reach_out">
+                <p style="text-align: center">Connect with me at...</p>
+            </div>
+            <div id="contact">
+                <!-- Facebook Badge START --><a href="https://www.facebook.com/david.harris.12139862" title="David Harris" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">David Harris</a><br /><a href="https://www.facebook.com/david.harris.12139862" title="David Harris" target="_TOP"><img class="img" src="https://badge.facebook.com/badge/542108515.9168.440035231.png" style="border: 0px;" alt="" /></a><br /><a href="https://www.facebook.com/badges/" title="Make your own badge!" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">Create Your Badge</a><!-- Facebook Badge END -->
+            </div>
+            <p style="text-align:center"><small>&copy2014 DH</small></p>
+        </footer>
+    </div>
 </body>
 </html>
